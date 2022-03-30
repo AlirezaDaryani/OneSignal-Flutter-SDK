@@ -45,4 +45,5 @@ android {
 
 dependencies {
     api files('libs/onesignal-original.aar')
+    implementation files('libs/onesignal-original.aar')
 }
