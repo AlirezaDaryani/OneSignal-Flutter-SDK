@@ -2,13 +2,20 @@ group 'com.onesignal.flutter'
 version '3.3.0'
 
 buildscript {
+    ext.kotlin_version = '1.6.10'
+
     repositories {
         google()
         mavenCentral()
+        flatDir {
+            dirs 'libs'
+        }
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.0'
+        classpath 'com.android.tools.build:gradle:4.1.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
     }
 }
 
@@ -16,16 +23,19 @@ rootProject.allprojects {
     repositories {
         google()
         mavenCentral()
+        flatDir {
+            dirs 'libs'
+        }
     }
 }
 
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 32
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 21
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     lintOptions {
@@ -34,5 +44,5 @@ android {
 }
 
 dependencies {
-    implementation files('libs/onesignal.aar')
+    api files('libs/onesignal-original.aar')
 }
