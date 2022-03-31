@@ -5,6 +5,9 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        flatDir {
+            dirs 'libs'
+        }
     }
 
     dependencies {
@@ -16,6 +19,9 @@ rootProject.allprojects {
     repositories {
         google()
         mavenCentral()
+        flatDir {
+            dirs 'libs'
+        }
     }
 }
 
@@ -25,7 +31,7 @@ android {
     compileSdkVersion 28
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 21
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     lintOptions {
@@ -34,5 +40,7 @@ android {
 }
 
 dependencies {
-    api 'com.onesignal:OneSignal:4.7.0'
+
+api files('libs/onesignal-original.aar')
 }
+
