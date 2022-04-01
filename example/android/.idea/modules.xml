@@ -3,7 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/android.iml" filepath="$PROJECT_DIR$/android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/android.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/android.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/onesignal/android.onesignal.iml" filepath="$PROJECT_DIR$/.idea/modules/onesignal/android.onesignal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1910179775/android.onesignal_flutter.iml" filepath="$PROJECT_DIR$/.idea/modules/-1910179775/android.onesignal_flutter.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/example.android.iml" filepath="$PROJECT_DIR$/.idea/modules/example.android.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../android/onesignal.iml" filepath="$PROJECT_DIR$/../../android/onesignal.iml" />
     </modules>
   </component>
