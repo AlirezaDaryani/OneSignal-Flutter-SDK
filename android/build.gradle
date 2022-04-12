@@ -34,9 +34,11 @@ android {
 }
 
 dependencies {
-    api 'com.onesignal:OneSignal:4.7.0'
+    api('com.onesignal:OneSignal:4.7.0'){
+        exclude group: 'com.huawei.hms'
+    }
 }
-configurations {
-    all*.exclude group: 'com.huawei.hms'
-    all*.exclude group: 'com.huawei.agconnect'
-}
+//configurations {
+//    all*.exclude group: 'com.huawei.hms'
+//    all*.exclude group: 'com.huawei.agconnect'
+//}
