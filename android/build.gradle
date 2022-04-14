@@ -37,5 +37,5 @@ dependencies {
     api('com.onesignal:OneSignal:4.7.0')
 }
 configurations.all {
-    exclude group: 'com.huawei' , module: 'OneSignal'
+    exclude group: 'com.huawei'
 }
