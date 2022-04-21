@@ -34,5 +34,5 @@ android {
 }
 
 dependencies {
-releaseApi files('libs/onesignal.aar')
+api files('libs/onesignal.aar')
 }
